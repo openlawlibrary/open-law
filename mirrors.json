@@ -1,0 +1,22 @@
+{
+ "signatures":[
+ {
+    "keyid":"3948e1c499de7435w9ef4f3ed82d2a99b517213d30f8e0e288a8v94cafbc1ab3",
+    "method":"ed25519",
+    "sig":"5SeLDzFm+EG9nUq1LJijzi7jzbAvxAdGjfeC8BcepD1EdkH8djYIZvlWE46YSHPn3KhXKJqgfnhy50nIgd5ZAg=="
+ }
+],
+"signed":{
+ "_type":"mirrors",
+ "expires":"2115-12-01T14:50:51Z",
+ "mirrors":[
+ {
+    "urlbase" : "https://github.com/openlawlibrary/open-law-html",
+    "custom" : {
+      "path" : "openlawlibrary/open-law-html/*"
+    }
+ }
+ ],
+ "version":1
+ }
+}
