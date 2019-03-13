@@ -13,10 +13,10 @@
  {
     "urlbase" : "https://github.com/openlawlibrary/open-law-html",
     "custom" : {
-      "path" : "openlawlibrary/open-law-html/*"
+      "path" : "openlawlibrary/open-law-html"
     }
  }
  ],
- "version":1
+ "version": 2
  }
 }
