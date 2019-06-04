@@ -1,0 +1,10 @@
+ {
+ 	"repositories": {
+ 		"openlawlibrary/open-law-html": {
+			"custom": {
+				"type": "html"
+			},
+ 			"urls": [ "https://github.com/openlawlibrary/open-law-html"]
+ 		}
+ 	}
+ }
