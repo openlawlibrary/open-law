@@ -1,0 +1,60 @@
+environment:
+  matrix:
+    # For Python versions available on Appveyor, see
+    # http://www.appveyor.com/docs/installed-software#python
+    - PYTHON: "C:\\Python36-x64"
+
+# Do not build feature branch with open Pull Requests
+skip_branch_with_pr: true
+
+init:
+  # exit if secure variables are unset (saves time if fired by a non-team pull request)
+  - ps: if ($env:GH_SSH_PRIVATE_KEY -eq $null) { exit }
+
+  - git config --global user.name oll-bot
+  - git config --global user.email developers@openlawlib.org
+
+install:
+  # the only way we can use the deploy key is by putting it in an environment variable (see above)
+  # and then using PowerShell (ps) to copy the environment variable into a file (see below)
+  # begin/end key lines should be in the environment variable
+  - ps: $key = "-----BEGIN RSA PRIVATE KEY-----`n"
+  - ps: $key += $env:GH_SSH_PRIVATE_KEY.Replace(" ", "`n")
+  - ps: $key += "`n-----END RSA PRIVATE KEY-----`n"
+  - ps: Set-Content c:\users\appveyor\.ssh\id_rsa $key
+  - ps: $fileContent = "-----BEGIN RSA PRIVATE KEY-----`n"
+  - ps: $fileContent += $env:snapshot_key.Replace(" ", "`n")
+  - ps: $fileContent += "`n-----END RSA PRIVATE KEY-----`n"
+  - ps: Set-Content c:\users\appveyor\snapshot $fileContent
+  - ps: $fileContent = "-----BEGIN RSA PRIVATE KEY-----`n"
+  - ps: $fileContent += $env:timestamp_key.Replace(" ", "`n")
+  - ps: $fileContent += "`n-----END RSA PRIVATE KEY-----`n"
+  - ps: Set-Content c:\users\appveyor\timestamp $fileContent
+  - set DEFAULT_PARTNER=OLL_PARTNERS_US_NSN_SAN_ILDEFONSO_COUNCIL oll.partners.us.nsn.san_ildefonso.council
+  - set OLL_PARTNERS_US_NSN_SAN_ILDEFONSO_COUNCIL_JURISDICTION=sanipueblo
+
+
+before_build:
+  - git clone git@github.com:sanipueblo/law-xml.git ..\sanipueblo\law-xml
+  - git clone git@github.com:sanipueblo/law-html.git ..\sanipueblo\law-html
+  - git clone  git@github.com:sanipueblo/law-xml-codified.git ..\sanipueblo\law-xml-codified
+
+  - git -C ..\law remote set-url origin git@github.com:sanipueblo/law.git
+
+  - "%PYTHON%\\python.exe -m pip -q install wheel"
+  - "%PYTHON%\\python.exe -m pip -q install -r requirements.txt"
+  # print out the git commits for each repo
+  - git -C ..\sanipueblo\law-xml rev-parse HEAD
+  - git -C ..\sanipueblo\law-xml-codified rev-parse HEAD
+  - git -C ..\sanipueblo\law-html rev-parse HEAD
+
+
+build_script:
+   - ps: $env:FLAG = if ($env:APPVEYOR_PULL_REQUEST_NUMBER -eq $null) { "--deploy" }
+   
+   - "%PYTHON%\\python.exe  -m oll.tools.cli ci merge_speculative_commits --library-root .. --auth ../law %FLAG%"
+
+
+test_script:
+  - echo Skipping doomed test discovery to save time
+
