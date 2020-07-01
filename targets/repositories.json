@@ -1,0 +1,9 @@
+{
+    "repositories": {
+        "openlawlibrary/open-law-html": {
+           "custom": {
+               "type": "html"
+           }
+        }
+    }
+}

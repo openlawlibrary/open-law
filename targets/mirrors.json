@@ -1,0 +1,5 @@
+{
+    "mirrors": [
+        "http://github.com/openlawlibrary/{repo_name}"
+    ]
+}
