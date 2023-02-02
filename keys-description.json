@@ -1,0 +1,64 @@
+{
+    "roles": {
+        "root": {
+          "number": 3,
+          "threshold": 2,
+          "yubikey": true
+        },
+        "targets": {
+          "number": 1,
+          "threshold": 1,
+          "yubikey": true,
+          "delegations": {
+            "roles": {
+              "law": {
+                "paths": [
+                  "openlawlibrary/open-law-html",
+                  "capstone",
+                  "branch",
+                  "law/capstone",
+                  "law/branch"
+                  ],
+                "number": 1,
+                "threshold": 1,
+                "yubikey": true,
+                "terminating": true
+              },
+              "docs":{
+                "paths": [
+                  "openlawlibrary/open-law-docs"
+                ],
+                "number": 1,
+                "threshold": 1,
+                "yubikey": true,
+                "terminating": true
+              },
+              "assets":{
+                "paths": [
+                  "openlawlibrary/law-static-assets"
+                ],
+                "number": 1,
+                "threshold": 1,
+                "yubikey": true,
+                "terminating": true
+              },
+			  "rdf":{
+                "paths": [
+                  "openlawlibrary/open-law-rdf",
+                  "rdf/capstone",
+                  "rdf/branch"
+                ],
+                "number": 1,
+                "threshold": 1,
+                "yubikey": true,
+                "terminating": true
+              }
+            }
+          }
+        },
+        "snapshot": {
+        },
+        "timestamp": {
+        }
+      }
+  }

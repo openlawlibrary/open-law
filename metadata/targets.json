@@ -1,18 +1,81 @@
 {
  "signatures": [
   {
-   "keyid": "c98e4b4a448749da3fc2c74cbec3d5f898a3e2ed866357a9a196f90957e2837b",
-   "sig": "95e7f32ed363eb7a0aa02331e17aa72891fa012ae18bf14d9cfb4435994610ec574aebf32c563a1fb9a124c312bbc55f4813be414b5f5061496872442d976c1957da414e6490d85be995e6ad14ecf257f1b449933a0e6278f6608b2709665391b311c77a091ad12efcfdadba1a54d9edde5a4d74934010c9e502c13c354ec63daa26426e2e034e5e6cf053638957ef82009be9c64cee8407aa981cd6bc0ee2ac7b51bfeb800c44c5bfb052ab825d5528e3f3c5239b092c337537f1a36ee84b923ef0619185e40272f981d997aa5c2028fdd4d97ae31b5925196d6c0b004bbc11a4ab54ce25510efa4f01b78a15193725109d50f3521d6ff3b83223b36c3252ed"
+   "keyid": "3ee0cbbdea49d1698ee17d6eb1f6c160315800026dfc29f810e0a216fa1b7e68",
+   "sig": "7d8c8f7a866e81beeb18bedc1d844d1a79cc82277c28c89ccfa5570a49c789b0c59d056df172b884ee19898921789de54385c502e2d3c813c904f6ac7519283cc9c59f3e46717b6476f349d24f6f857e82d8c7b1ec1b17380514da7b9f323652a3b122225504c1bbf4c93c315476ca70c5784fb6ba9f3f6b50177482a0a798bb73540d0725be15188f17d911121b819102f3b8663bc4b7d2922ee7bf8e19819ce8ebc38d3466c33da6f750639b6b329672456ffa254d17b9ad6714fe51ab0646e27d63a9cd08864813e7d878720d54c907c550742d91fbd4595537148d79e98b89256fbb8b19995dfd7a9b1dfbc4cbb1f50b33805546557641e56a94be91b8a3"
   }
  ],
  "signed": {
   "_type": "targets",
   "delegations": {
-   "keys": {},
-   "roles": []
+   "keys": {
+    "3ee0cbbdea49d1698ee17d6eb1f6c160315800026dfc29f810e0a216fa1b7e68": {
+     "keyid_hash_algorithms": [
+      "sha256",
+      "sha512"
+     ],
+     "keytype": "rsa",
+     "keyval": {
+      "public": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6OyuwnpYgc3asb9sp8rR\nI+8IBFubCsnVoNooFwK0I/mHVM37PA6GOgsfvDcwYVO5hxTSzkiiPXVkXcQvQIqj\nxYM+mIvRMoMMZYGe7FG5lyKCsOkAyRVouc65aemcpL3YvfJfk6d0emv178x5Npge\nV+mHu5FTSPmxvHH2yMQms9o8TWlrDQUBn6s24s/FFTu4Z2SQbJHhJTgFpHIl50Bq\nE28NJLSG5KI5waEaA/oQTATTLGVF/nsVouZQop34CzObpPzD+r7XqrTT7IquEfDj\nwKeCE6UWrypkCo6k7hdv9ZV/oihqeSNMzsyppvfiH9tfMS+sjte43yn5YjME9ZPd\nYwIDAQAB\n-----END PUBLIC KEY-----"
+     },
+     "scheme": "rsa-pkcs1v15-sha256"
+    }
+   },
+   "roles": [
+    {
+     "keyids": [
+      "3ee0cbbdea49d1698ee17d6eb1f6c160315800026dfc29f810e0a216fa1b7e68"
+     ],
+     "name": "law",
+     "paths": [
+      "openlawlibrary/open-law-html",
+      "capstone",
+      "branch",
+      "law/capstone",
+      "law/branch"
+     ],
+     "terminating": true,
+     "threshold": 1
+    },
+    {
+     "keyids": [
+      "3ee0cbbdea49d1698ee17d6eb1f6c160315800026dfc29f810e0a216fa1b7e68"
+     ],
+     "name": "docs",
+     "paths": [
+      "openlawlibrary/open-law-docs"
+     ],
+     "terminating": true,
+     "threshold": 1
+    },
+    {
+     "keyids": [
+      "3ee0cbbdea49d1698ee17d6eb1f6c160315800026dfc29f810e0a216fa1b7e68"
+     ],
+     "name": "assets",
+     "paths": [
+      "openlawlibrary/law-static-assets"
+     ],
+     "terminating": true,
+     "threshold": 1
+    },
+    {
+     "keyids": [
+      "3ee0cbbdea49d1698ee17d6eb1f6c160315800026dfc29f810e0a216fa1b7e68"
+     ],
+     "name": "rdf",
+     "paths": [
+      "openlawlibrary/open-law-rdf",
+      "rdf/capstone",
+      "rdf/branch"
+     ],
+     "terminating": true,
+     "threshold": 1
+    }
+   ]
   },
-  "expires": "2020-09-29T10:59:49Z",
-  "spec_version": "1.0",
+  "expires": "2023-05-03T09:02:59Z",
+  "spec_version": "1.0.0",
   "targets": {
    "mirrors.json": {
     "hashes": {
@@ -36,6 +99,6 @@
     "length": 149
    }
   },
-  "version": 4
+  "version": 5
  }
 }
