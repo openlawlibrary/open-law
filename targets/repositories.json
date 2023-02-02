@@ -4,6 +4,14 @@
            "custom": {
                "type": "html"
            }
+        },
+        "openlawlibrary/law-static-assets": {
+            "custom": {
+                "type":"static-assets",
+                "allow-unauthenticated-commits":true,
+                "serve":"latest",
+                "location_regex":"~.+(_document|_reader).+$"
+            }
         }
     }
 }

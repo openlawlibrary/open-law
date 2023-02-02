@@ -1,0 +1,32 @@
+{
+    "dependencies": {
+        "cityofsanmateo/law": {
+            "out-of-band-authentication": "357ea1742116658104b7a505fcf78d54f0a5b688",
+            "branch": "master"
+        },
+        "sanipueblo/law": {
+            "out-of-band-authentication": "2a998e030078a6d30e4b41f61daa5149c6a4f56a",
+            "branch": "master"
+        },
+        "DCCouncil/law": {
+            "out-of-band-authentication": "30c44632b70ee0292c93177fee5ff72f49beeea8",
+            "branch": "main"
+        },
+        "mohicanlaw/law": {
+            "out-of-band-authentication": "a3a5023deb0279a6930631e7121288a015f6d3f0",
+            "branch": "master"
+        },
+        "lco-nsn/law": {
+            "out-of-band-authentication": "13685e1489356abb1505d461bc0fefef9c25319d",
+            "branch": "main"
+        },
+        "tmchippewa/law": {
+            "out-of-band-authentication": "80fea6e3d398fb50a155c136824c8d45dcc8936a",
+            "branch": "main"
+        },
+        "openlawlibrary/plateau-demo-law": {
+            "out-of-band-authentication": "2a998e030078a6d30e4b41f61daa5149c6a4f56a",
+            "branch": "master"
+        }
+    }
+}
