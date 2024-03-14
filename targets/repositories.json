@@ -2,7 +2,9 @@
     "repositories": {
         "openlawlibrary/open-law-html": {
            "custom": {
-               "type": "html"
+               "type": "html",
+               "serve":"latest",
+               "routes": [".*"]
            }
         },
         "openlawlibrary/law-static-assets": {
@@ -10,7 +12,9 @@
                 "type":"static-assets",
                 "allow-unauthenticated-commits":true,
                 "serve":"latest",
-                "location_regex":"~.+(_document|_reader).+$"
+                "location_regex":"~.+(_document|_reader).+$",
+                "is_fallback": true,
+                "routes": [".*_document/.*", "_reader/.*"]
             }
         }
     }
