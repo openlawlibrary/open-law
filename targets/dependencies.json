@@ -23,10 +23,6 @@
         "tmchippewa/law": {
             "out-of-band-authentication": "80fea6e3d398fb50a155c136824c8d45dcc8936a",
             "branch": "main"
-        },
-        "openlawlibrary/plateau-demo-law": {
-            "out-of-band-authentication": "2a998e030078a6d30e4b41f61daa5149c6a4f56a",
-            "branch": "master"
         }
     }
 }
