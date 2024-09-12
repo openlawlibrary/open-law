@@ -27,6 +27,10 @@
         "cityofamericancanyon/law": {
             "out-of-band-authentication": "b95ea331d3a149122987e15f4c2a6e44d9869e4c",
             "branch": "main"
+        },
+        "umitribe/law": {
+            "out-of-band-authentication": "83d116e7b3305ee380761972666112b6c34db45a",
+            "branch": "main"
         }
     }
 }
