@@ -31,6 +31,10 @@
         "umitribe/law": {
             "out-of-band-authentication": "83d116e7b3305ee380761972666112b6c34db45a",
             "branch": "main"
+        },
+        "kiowatribe/law": {
+            "out-of-band-authentication": "a61802b3517614176e7236b171d2c43baa4f2e17",
+            "branch": "main"
         }
     }
 }
