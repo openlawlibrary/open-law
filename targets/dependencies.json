@@ -35,6 +35,10 @@
         "kiowatribe/law": {
             "out-of-band-authentication": "a61802b3517614176e7236b171d2c43baa4f2e17",
             "branch": "main"
+        },
+        "badriver-nsn/law": {
+            "out-of-band-authentication": "1a5dd6a124464d484dade605c27e7401c7a5d3f2",
+            "branch": "main"
         }
     }
 }
