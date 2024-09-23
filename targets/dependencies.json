@@ -43,6 +43,10 @@
         "openlawlibrary/plateau-demo-law": {
             "out-of-band-authentication": "2a998e030078a6d30e4b41f61daa5149c6a4f56a",
             "branch": "master"
+        },
+        "srmt-nsn/law": {
+            "out-of-band-authentication": "fe52cadf8bd5c52038458dbee8712973b8d5ab39",
+            "branch": "main"
         }
     }
 }
