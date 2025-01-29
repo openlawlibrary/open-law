@@ -1,5 +1,9 @@
 {
     "dependencies": {
+        "baltimore-legref/law": {
+            "out-of-band-authentication": "143c06f31c5a4c339ac551d304e5ff37c435927a",
+            "branch": "main"
+        },
         "cityofsanmateo/law": {
             "out-of-band-authentication": "357ea1742116658104b7a505fcf78d54f0a5b688",
             "branch": "master"
