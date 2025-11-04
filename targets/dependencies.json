@@ -4,6 +4,10 @@
             "out-of-band-authentication": "143c06f31c5a4c339ac551d304e5ff37c435927a",
             "branch": "main"
         },
+        "maryland-dsd/law": {
+            "out-of-band-authentication": "df241af38b0aa7816288246cec7c92802efa5707",
+            "branch": "main"
+        },
         "cityofsanmateo/law": {
             "out-of-band-authentication": "357ea1742116658104b7a505fcf78d54f0a5b688",
             "branch": "master"
@@ -19,6 +23,10 @@
         "mohicanlaw/law": {
             "out-of-band-authentication": "a3a5023deb0279a6930631e7121288a015f6d3f0",
             "branch": "master"
+        },
+        "picurispueblo/law": {
+            "out-of-band-authentication": "5ce41a1972823f6bbdc685d74373595825068928",
+            "branch": "main"
         },
         "lco-nsn/law": {
             "out-of-band-authentication": "13685e1489356abb1505d461bc0fefef9c25319d",
